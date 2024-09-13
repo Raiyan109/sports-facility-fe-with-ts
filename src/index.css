@@ -1,4 +1,75 @@
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #2d283e;
+}
+
+/* chart colors */
+@layer base {
+    :root {
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+    }
+
+    .dark {
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+
+
+/* Hero bg */
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.05)), url('./assets/bg2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+@layer utilities {
+    .booking-btn {
+        @apply w-fit bg-accent hover:bg-[#8117be] font-medium text-xl py-3 px-8 rounded-full ease-in-out duration-100
+    }
+}
+
+/* Contact Us page Map */
+.responsive-map {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 30%;
+    position: relative;
+}
+
+.responsive-map iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}

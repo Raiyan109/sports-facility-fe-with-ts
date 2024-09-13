@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -17,6 +18,12 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        primary: '#2d283e',
+        secondary: '#564f6f',
+        accent: '#802bb1',
+        grayText: '#d1d7e0'
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -33,5 +40,6 @@ module.exports = {
       },
     },
   },
+  // eslint-disable-next-line no-undef
   plugins: [require("tailwindcss-animate")],
 }
