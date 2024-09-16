@@ -6,7 +6,7 @@ const Hero = () => {
         // w-full h-[calc(100vh-8ch)]
         <div className="flex flex-col md:flex-row relative h-screen py-16 md:py-32">
             <div className="flex-1 w-full flex justify-center md:justify-between gap-12 pb-10">
-                <motion.div className='rounded-md flex justify-center items-center md:items-stretch flex-col space-y-11'
+                <motion.div className='rounded-md flex justify-center items-center md:items-start flex-col space-y-11'
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: 'linear', delay: 0.2 }}
