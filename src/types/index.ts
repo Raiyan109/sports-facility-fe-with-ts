@@ -16,3 +16,8 @@ export type TSignUpFormValues = {
     role: string
     address: string
 }
+
+export type TLoginFormValues = {
+    email: string
+    password: string
+}
