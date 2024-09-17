@@ -8,6 +8,14 @@ export type TFacility = {
     image: string
 }
 
+export type TUpdateFacility = {
+    name: string
+    description: string
+    pricePerHour: number
+    location: string
+    // image: string
+}
+
 export type TSignUpFormValues = {
     name: string
     email: string
